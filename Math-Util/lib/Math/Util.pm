@@ -5,7 +5,7 @@ our $VERSION = '0.01';
 
 use base 'Exporter';
 
-our @EXPORT = qw/factorize/;
+our @EXPORT_OK = qw/factorize/;
 
 sub factorize {
     my ( $number, $primers ) = @_;
