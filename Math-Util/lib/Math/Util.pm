@@ -5,7 +5,7 @@ our $VERSION = '0.01';
 
 use base 'Exporter';
 
-our @EXPORT_OK = qw/factorize/;
+our @EXPORT_OK = qw/factorize sum_square add_k/;
 
 sub factorize {
     my ( $number, $primers ) = @_;
@@ -18,6 +18,16 @@ sub factorize {
         }
     }
     return $primers;
+}
+
+sub sum_square {
+    my ( $k ) = @_;
+    return ( 2 * $k + 1) * $k * ( $k + 1 ) / 6;
+}
+
+sub add_k{
+    my ( $k ) = @_;
+    return ( $k ) * ( $k + 1 ) / 2;
 }
 
 1;
